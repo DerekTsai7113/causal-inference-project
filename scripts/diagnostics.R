@@ -169,10 +169,8 @@ print(p_overlap)
 
 dev.off()
 
-# =========================================================
-# Love plot: SMD before and after weighting
-# =========================================================
 
+# Love plot
 p_love = love.plot(
   ps_formula,
   data = df,
@@ -207,9 +205,7 @@ love.plot(
 
 dev.off()
 
-# =========================================================
 # Balance table
-# =========================================================
 
 balance_table = bal.tab(
   ps_formula,
@@ -223,10 +219,6 @@ balance_table = bal.tab(
 print("Covariate balance table:")
 
 print(balance_table)
-
-# =========================================================
-# Save diagnostics object
-# =========================================================
 
 saveRDS(
   list(

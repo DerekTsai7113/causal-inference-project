@@ -32,10 +32,7 @@ df = analysis_df %>%
     flu_shot = as.numeric(flu_shot)
   )
 
-# =========================================================
 # Part 1: sensemakr
-# Linear regression sensitivity analysis
-# =========================================================
 
 reg_model = lm(
   flu_shot ~
@@ -108,10 +105,8 @@ write.csv(
 )
 
 
-# =========================================================
 # Part 2: E-value
-# Logistic outcome model sensitivity analysis
-# =========================================================
+
 
 outcome_model = glm(
   flu_shot ~
